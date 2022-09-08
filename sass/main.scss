@@ -1,6 +1,7 @@
 @import "opensans/opensans.css";
 @import "roboto/roboto.css";
 
+
 * {
   padding: 0;
   margin: 0;
@@ -50,7 +51,7 @@ body {
 
 .header {
   background: linear-gradient(111.24deg, #212957 13.99%, #505fb2 86.01%);
-  padding-top: 10rem;
+  padding-top: 4rem;
   padding-bottom: 15rem;
   color: #fff;
   margin-bottom: 10rem;
@@ -151,7 +152,7 @@ body {
   }
 
   &__container {
-    max-width: 131rem;
+    max-width: 140rem;
   }
 
   &__heading {
@@ -177,6 +178,8 @@ body {
     padding: 2rem;
     text-align: center;
     background-color: #fff;
+    width: 30.5rem;
+    
 
     &__img {
       margin-bottom: 4rem;
@@ -372,7 +375,7 @@ body {
 
   input[type="text"],
   input[type="email"],
-  input[type="tel"] {
+  input[type="number"] {
     width: 100%;
     margin-top: .5rem;
     margin-bottom: 2rem;
@@ -386,6 +389,10 @@ body {
       outline: 1px solid #84ddf3;
     }
   }
+  #phone {
+    padding-left: 5rem;
+  }
+ 
 
   .checkbox-label {
     font-family: Roboto, sans-serif;
@@ -474,6 +481,7 @@ body {
 
 .footer {
   background: #0f0f0f;
+  padding-left: 5rem;
   padding-top: 3rem;
   padding-bottom: 5.5rem;
 
@@ -511,6 +519,29 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, .7);
-    max-width: 86rem;
+    max-width: 86rem; 
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.iti__flag {background-image: url("../img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../img/flags@2x.png");}
+}
+.iti {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+ 
+}
+.iti__country-name{
+color: #000;
 }

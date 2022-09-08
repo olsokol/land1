@@ -6,7 +6,10 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Investcatalog</title>
+   <link rel="stylesheet" href="css/intlTelInput.min.css">
    <link rel="stylesheet" href="css/main.css">
+
+   
 </head>
 
 <body>
@@ -261,7 +264,7 @@
          <input name="email" type="email" class="form__input" placeholder="E-mail" required><br>
       </label>
    <label>Phone
-         <input name="phone" type="tel" class="form__input" placeholder="Phone" required><br>
+         <input name="phone" type="number" class="form__input" id="phone" placeholder="Phone number" required><br>
 </label>
          <label  class="checkbox-label">
             <input type="checkbox" checked="checked" name="privacy" style="margin-bottom:15px"> 
@@ -298,6 +301,16 @@
          </p>
       </div>
    </footer>
+   
+   <script src="js/jQuery3.6.1.js"></script>
+   <script src="js/intlTelInput.min.js"></script>
+<script>
+  var input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+   initialCountry: "ca",
+   preferredCountries: ["us", "ca"]
+  });
+</script>
 
 </body>
 

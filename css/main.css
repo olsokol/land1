@@ -39,7 +39,7 @@ body {
 
 .header {
   background: linear-gradient(111.24deg, #212957 13.99%, #505fb2 86.01%);
-  padding-top: 10rem;
+  padding-top: 4rem;
   padding-bottom: 15rem;
   color: #fff;
   margin-bottom: 10rem; }
@@ -116,7 +116,7 @@ body {
     .ideas {
       margin-bottom: 3rem; } }
   .ideas__container {
-    max-width: 131rem; }
+    max-width: 140rem; }
   .ideas__heading {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -135,7 +135,8 @@ body {
   .ideas .card {
     padding: 2rem;
     text-align: center;
-    background-color: #fff; }
+    background-color: #fff;
+    width: 30.5rem; }
     .ideas .card__img {
       margin-bottom: 4rem;
       height: 10rem;
@@ -278,7 +279,7 @@ body {
       color: #84ddf3; }
   .form input[type="text"],
   .form input[type="email"],
-  .form input[type="tel"] {
+  .form input[type="number"] {
     width: 100%;
     margin-top: .5rem;
     margin-bottom: 2rem;
@@ -289,8 +290,10 @@ body {
     box-shadow: 0 32px 40px rgba(1, 1, 1, 0.1); }
     .form input[type="text"]:focus,
     .form input[type="email"]:focus,
-    .form input[type="tel"]:focus {
+    .form input[type="number"]:focus {
       outline: 1px solid #84ddf3; }
+  .form #phone {
+    padding-left: 5rem; }
   .form .checkbox-label {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -358,6 +361,7 @@ body {
 
 .footer {
   background: #0f0f0f;
+  padding-left: 5rem;
   padding-top: 3rem;
   padding-bottom: 5.5rem; }
   .footer__container {
@@ -389,3 +393,26 @@ body {
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
     max-width: 86rem; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.iti__flag {
+  background-image: url("../img/flags.png"); }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png"); } }
+
+.iti {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: 2rem; }
+
+.iti__country-name {
+  color: #000; }
