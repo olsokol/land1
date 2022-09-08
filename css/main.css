@@ -1,0 +1,391 @@
+@import url(opensans/opensans.css);
+@import url(roboto/roboto.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1800px) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 45%; } }
+
+body {
+  background-color: #e5e5e5; }
+
+.button {
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: .2s; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 2rem; }
+
+.header {
+  background: linear-gradient(111.24deg, #212957 13.99%, #505fb2 86.01%);
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  color: #fff;
+  margin-bottom: 10rem; }
+  @media (max-width: 600px) {
+    .header {
+      margin-bottom: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
+  .header__container {
+    max-width: 160rem; }
+  .header__heading {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 1.3;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+    @media (max-width: 400px) {
+      .header__heading {
+        font-size: 4rem; } }
+  .header .heading {
+    margin-top: 10rem; }
+    .header .heading_text {
+      text-transform: lowercase; }
+    .header .heading_accent {
+      text-transform: lowercase;
+      color: #84ddf3; }
+    @media (max-width: 600px) {
+      .header .heading {
+        margin-top: 5rem; } }
+  .header__logo {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: .03em;
+    margin-left: 5rem; }
+  .header__text {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.67;
+    text-align: center;
+    margin-bottom: 4rem; }
+  .header__button {
+    background: #84ddf3;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 2.2rem 9.2rem;
+    letter-spacing: .03em;
+    color: #0a0913;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
+    border: 2px solid #84ddf3; }
+    .header__button:hover {
+      background: #fff; }
+
+.ideas {
+  margin-bottom: 12rem; }
+  @media (max-width: 600px) {
+    .ideas {
+      margin-bottom: 3rem; } }
+  .ideas__container {
+    max-width: 131rem; }
+  .ideas__heading {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    letter-spacing: .03em;
+    color: #0a0913;
+    margin-bottom: 4rem; }
+  .ideas .card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 3rem; }
+  .ideas .card {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff; }
+    .ideas .card__img {
+      margin-bottom: 4rem;
+      height: 10rem;
+      max-width: 20rem;
+      object-fit: contain; }
+    .ideas .card__heading {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 1.25;
+      color: #0a0913;
+      margin-bottom: 1rem; }
+      .ideas .card__heading-name {
+        text-transform: uppercase; }
+    .ideas .card .stars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem; }
+      .ideas .card .stars > *:not(:first-child) {
+        margin-left: .5rem; }
+    .ideas .card__text {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.67;
+      color: #0a0913;
+      margin-bottom: 3rem; }
+    .ideas .card__button {
+      background: #84ddf3;
+      border: 1px solid #84ddf3;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: .03em;
+      color: #0a0913;
+      width: 100%;
+      padding: 1.2rem 0; }
+      .ideas .card__button:hover {
+        border: 1px solid #84ddf3;
+        background-color: #fff;
+        color: #84ddf3; }
+    .ideas .card:hover {
+      background: #edfbff;
+      box-shadow: 0 20px 20px rgba(34, 42, 88, 0.1), 0 32px 40px rgba(34, 42, 88, 0.1);
+      border-radius: 5px; }
+
+.how {
+  margin-bottom: 18rem; }
+  @media (max-width: 600px) {
+    .how {
+      margin-bottom: 3rem; } }
+  .how__container {
+    max-width: 131rem; }
+  .how__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .how__right, .how__left {
+    padding: 2rem; }
+  .how__left {
+    flex-basis: 40%;
+    align-self: stretch;
+    background: url("../img/img-left.svg") center/contain no-repeat; }
+  .how__right {
+    flex-basis: 60%; }
+  .how__heading {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #010101;
+    margin-bottom: 2.5rem; }
+  .how__text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.67;
+    color: #000; }
+    .how__text:first-of-type {
+      margin-bottom: 4rem; }
+  @media (max-width: 900px) {
+    .how__left {
+      display: none; }
+    .how__right {
+      flex-basis: 100%; }
+    .how__heading {
+      text-align: center; } }
+
+.questions {
+  margin-bottom: 5rem; }
+  @media (max-width: 600px) {
+    .questions {
+      margin-bottom: 3rem; } }
+  .questions__heading {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #010101;
+    margin-bottom: 2rem; }
+
+.form {
+  width: fit-content;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem; }
+  .form__heading {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #000;
+    margin-bottom: 2.5rem;
+    max-width: 53rem;
+    padding: 0 2rem; }
+  .form label {
+    max-width: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    border-radius: 5px; }
+    .form label:not(:last-of-type):focus-within {
+      color: #84ddf3; }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="tel"] {
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding: 1.5rem;
+    border: 0;
+    outline: none;
+    box-shadow: 0 32px 40px rgba(1, 1, 1, 0.1); }
+    .form input[type="text"]:focus,
+    .form input[type="email"]:focus,
+    .form input[type="tel"]:focus {
+      outline: 1px solid #84ddf3; }
+  .form .checkbox-label {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.57;
+    color: rgba(1, 1, 1, 0.6);
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    margin-bottom: 4rem; }
+    .form .checkbox-label .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #fff; }
+    .form .checkbox-label .privacy {
+      color: #84ddf3;
+      text-decoration: none;
+      font-weight: bold; }
+      .form .checkbox-label .privacy:hover {
+        text-decoration: underline; }
+    .form .checkbox-label .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg); }
+    .form .checkbox-label input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0; }
+    .form .checkbox-label input[type="checkbox"]:checked ~ .checkmark {
+      background-color: #2196f3; }
+    .form .checkbox-label input[type="checkbox"]:checked ~ .checkmark::after {
+      display: block; }
+  .form__button {
+    padding: 1.2rem 0;
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: .03em;
+    color: #0a0913;
+    background: #84ddf3;
+    border: 2px solid transparent;
+    margin-left: auto;
+    margin-right: auto; }
+    .form__button:hover {
+      background: #fff;
+      border-color: #84ddf3;
+      color: #84ddf3; }
+
+.footer {
+  background: #0f0f0f;
+  padding-top: 3rem;
+  padding-bottom: 5.5rem; }
+  .footer__container {
+    max-width: 1600px;
+    padding-right: 16rem; }
+  .footer__logo {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: .03em;
+    color: #fff;
+    margin-bottom: 2.5rem; }
+  .footer__link,
+  .footer__link a {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: #fff; }
+  .footer__text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 86rem; }
