@@ -6,6 +6,7 @@
   box-sizing: border-box; }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%; }
   @media (max-width: 1800px) {
     html {
@@ -39,7 +40,7 @@ body {
 
 .header {
   background: linear-gradient(111.24deg, #212957 13.99%, #505fb2 86.01%);
-  padding-top: 10rem;
+  padding-top: 4rem;
   padding-bottom: 15rem;
   color: #fff;
   margin-bottom: 10rem; }
@@ -83,6 +84,7 @@ body {
     margin-left: 5rem; }
   .header__text {
     max-width: 70rem;
+    text-transform: lowercase;
     margin-left: auto;
     margin-right: auto;
     font-family: "Open Sans", sans-serif;
@@ -92,6 +94,8 @@ body {
     line-height: 1.67;
     text-align: center;
     margin-bottom: 4rem; }
+    .header__text-accent {
+      text-transform: uppercase; }
   .header__button {
     background: #84ddf3;
     font-family: "Open Sans", sans-serif;
@@ -106,7 +110,8 @@ body {
     margin-right: auto;
     width: fit-content;
     display: block;
-    border: 2px solid #84ddf3; }
+    border: 2px solid #84ddf3;
+    text-transform: uppercase; }
     .header__button:hover {
       background: #fff; }
 
@@ -116,7 +121,7 @@ body {
     .ideas {
       margin-bottom: 3rem; } }
   .ideas__container {
-    max-width: 131rem; }
+    max-width: 140rem; }
   .ideas__heading {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -135,7 +140,8 @@ body {
   .ideas .card {
     padding: 2rem;
     text-align: center;
-    background-color: #fff; }
+    background-color: #fff;
+    width: 30.5rem; }
     .ideas .card__img {
       margin-bottom: 4rem;
       height: 10rem;
@@ -278,7 +284,7 @@ body {
       color: #84ddf3; }
   .form input[type="text"],
   .form input[type="email"],
-  .form input[type="tel"] {
+  .form input[type="number"] {
     width: 100%;
     margin-top: .5rem;
     margin-bottom: 2rem;
@@ -289,8 +295,13 @@ body {
     box-shadow: 0 32px 40px rgba(1, 1, 1, 0.1); }
     .form input[type="text"]:focus,
     .form input[type="email"]:focus,
-    .form input[type="tel"]:focus {
+    .form input[type="number"]:focus {
       outline: 1px solid #84ddf3; }
+  .form #phone, .form #phone1 {
+    padding-left: 5rem; }
+    @media (max-width: 900px) {
+      .form #phone, .form #phone1 {
+        padding-left: 7rem; } }
   .form .checkbox-label {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -358,6 +369,7 @@ body {
 
 .footer {
   background: #0f0f0f;
+  padding-left: 5rem;
   padding-top: 3rem;
   padding-bottom: 5.5rem; }
   .footer__container {
@@ -389,3 +401,62 @@ body {
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
     max-width: 86rem; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.iti__flag {
+  background-image: url("../img/flags.png"); }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png"); } }
+
+.iti {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: 2rem; }
+
+.iti__country-name {
+  color: #000; }
+
+.popup {
+  z-index: 50;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center; }
+  .popup .form {
+    top: 3rem;
+    background: #fff;
+    position: relative;
+    padding: 3rem; }
+    .popup .form .close {
+      width: 2rem;
+      height: 2rem;
+      font-size: 3rem;
+      background: none;
+      border: 0;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      transition: .2s;
+      cursor: pointer; }
+      .popup .form .close:hover {
+        transform: rotate(45deg) translate(0.7rem, -0.6rem); }
+    @media (max-width: 560px) {
+      .popup .form {
+        width: 90%; } }
+
+.iti__country-name {
+  font-size: 2rem; }
