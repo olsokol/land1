@@ -17,26 +17,29 @@
    <header class="header">
       <div class="container header__container">
          <div class="logo header__logo">
-            LOGO
+          <img src="img/logo.svg" alt="logo" width="70" height="30">
          </div>
          <h1 class="header__heading heading">
-            Идеи под инвестицию
-            <br><span class="heading_text">на которых можно зарабатывать</span>
+            КРОВЬ ФОНДОВОГО и
+            <br> ТОВАРНО-СЫРЬЕВОГО РЫНКОВ
+            <!-- <br><span class="heading_text">на которых можно зарабатывать</span>
             <br>
-            <span class="heading_accent"> от 750 790 руб в месяц</span>
+            <span class="heading_accent"> от 750 790 руб в месяц</span> -->
          </h1>
          <p class="header__text">
-            Получите список идей на почту и руководство в подарок, как начать зарабатывать от 750 790 руб в месяц
+            РЕШЕНИЯ и АНАЛИТИКА РЫНКОВ ДЛЯ ИНВЕСТИЦИЙ В ПЕРИОД ПАДЕНИЯ АКЦИЙ НА ФОНДОВОМ И ТОВАРНО-Сырьевом РЫНКЕ. 
+            <!-- <span class="header__text-accent">Бесплатная Консультация</span> -->
+
          </p>
-         <a href="#" class="header__button button button_main">
-            ПОЛУЧИТЬ
+         <a href="#questions" class="header__button button button_main">
+            Бесплатная Консультация
          </a>
       </div>
    </header>
    <section class="ideas">
       <div class="container ideas__container">
          <h2 class="ideas__heading heading">
-            ЗАРУБЕЖНЫЕ ИДЕИ
+            МЕЖДУНАРОДНЫЕ ИНВЕСТИЦИИ
          </h2>
 
          <div class="card-wrapper">
@@ -238,24 +241,23 @@
                   КАК ЭТО РАБОТАЕТ?
                </h2>
                <p class="how__text">
-                  В этот сервис мы собрали актуальные инвестиционные идеи, которые можно и нужно применить в своих
-                  инвестициях прямо сейчас.
+                  Это список горячих, высокодоходных инвестиционных активов и решений, использовать которые ты просто обязан, уже сегодня.
                </p>
                <p class="how__text">
-                  Идеи постоянно обновляются в зависимости от того, что происходит на финансовых рынках. Каждый может
-                  воспользоваться любой идеей, представленной здесь.
+                  Инвестиционные решения работают в режиме реального времени, то есть здесь и сейчас. Наши специалисты следят за изменениями на рынке 24/7 и предоставляют самые свежие  решения о инвестиционных активах.
+
                </p>
             </div>
          </div>
       </div>
    </section>
-   <section class="questions">
+   <section class="questions" id="questions">
       <h2 class="questions__heading heading">
          ОСТАЛИСЬ ВОПРОСЫ?
       </h2>
       <form action="#" class="form">
          <h4 class="form__heading">
-            Оставьте ваши данные, мы свяжемся с вами и проконсультируем по работе сервиса
+            оставьте свои данные, наши консультанты свяжутся с вами и  помогут во всем разобраться
          </h4>
          <label>Name <br>
             <input name="name" type="text" class="form__input" placeholder="Name" required><br>
@@ -267,7 +269,7 @@
          <input name="phone" type="number" class="form__input" id="phone" placeholder="Phone number" required><br>
 </label>
          <label  class="checkbox-label">
-            <input type="checkbox" checked="checked" name="privacy" style="margin-bottom:15px"> 
+            <input type="checkbox" checked="checked" name="privacy" style="margin-bottom:15px" required> 
             I agree to the <a href="#" class="privacy">Terms</a> and <a href="#" class="privacy">Privacy Policy</a>
             <span class="checkmark"></span>
          </label>
@@ -282,34 +284,83 @@
    <footer class="footer">
       <div class="container footer__container">
          <div class="logo footer__logo">
-            LOGO
+            <img src="img/logo.svg" alt="logo" width="70" height="30">
          </div>
          <span class="footer__link">
             Phone: 
-            <a href="tel:+4444444444444" >+4444444444444</a>
+            <a href="tell:+1 872 260 1720">USA +1 872 260 1720</a>
 
          </span>
          <br>
          <span class="footer__link">
             Email: 
-            <a href="mailto:support@support.com" >support@support.com</a>
+            <a href="mailto:support@cryptokg.io">support@cryptokg.io</a>
 
          </span>
 
          <p class="footer__text">
             Компания Fin-Critical является консультационным центром. Fin-Critical выступает исключительно в качестве финансового консультанта. Fin-Critical cобирает, анализирует и систематизирует информацию о поведении цен на различные финансовые активы, по поручению своих клиентов.
+
          </p>
       </div>
    </footer>
+
+   <div class="popup" id="popup">
+      <form action="#" class="form">
+         <button class="close">&#10006;</button>
+         <h4 class="form__heading">
+            оставьте свои данные, наши консультанты свяжутся с вами и  помогут во всем разобраться
+         </h4>
+         <label>Name <br>
+            <input name="name" type="text" class="form__input" placeholder="Name" required><br>
+         </label>
+         <label>Email
+         <input name="email" type="email" class="form__input" placeholder="E-mail" required><br>
+      </label>
+      <label>Phone
+         <input name="phone" type="number" class="form__input" id="phone1" placeholder="Phone number" required><br>
+</label>
+         <label  class="checkbox-label">
+            <input type="checkbox" checked="checked" name="privacy" style="margin-bottom:15px" required> 
+            I agree to the <a href="#" class="privacy">Terms</a> and <a href="#" class="privacy">Privacy Policy</a>
+            <span class="checkmark"></span>
+         </label>
+         <button type="submit" class="button form__button">ОСТАВИТЬ ЗАЯВКУ</button>
+      </form>
+   </div>
    
    <script src="js/jQuery3.6.1.js"></script>
    <script src="js/intlTelInput.min.js"></script>
+   <script src="js/cookie.notice.js"></script>
 <script>
   var input = document.querySelector("#phone");
+  var input1 = document.querySelector("#phone1");
   window.intlTelInput(input, {
    initialCountry: "ca",
    preferredCountries: ["us", "ca"]
   });
+  window.intlTelInput(input1, {
+   initialCountry: "ca",
+   preferredCountries: ["us", "ca"]
+  });
+</script>
+<script>
+   $(".card__button").click(function(e){ 
+e.preventDefault();
+
+      $("#popup").fadeIn("fast");
+   })
+$('#popup').click(function() {
+  
+
+   if (
+      event.target.matches(".close") ||
+      event.target.matches(".popup")
+    ) {
+      $('#popup').fadeOut("fast");
+    }
+
+});
 </script>
 
 </body>
